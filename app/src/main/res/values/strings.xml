@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Custom Component</string>
+
+    <string name="e_mail">E-mail</string>
+    <string name="password">Senha</string>
+    <string name="edt_hint_text">Texto exemplo</string>
+</resources>
