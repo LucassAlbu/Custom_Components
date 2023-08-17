@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ButtonComponent">
+        <attr name="size">
+            <enum name="small" value="0" />
+            <enum name="medium" value="1" />
+            <enum name="large" value="2" />
+        </attr>
+        <attr name="ButtonType" format="enum">
+            <enum name="primary" value="0" />
+            <enum name="secondary" value="1" />
+            <enum name="tertiary" value="2" />
+            <enum name="transparent" value="3" />
+            <enum name="danger" value="4" />
+        </attr>
+        <attr name="state">
+            <enum name="defaultEnabled" value="0" />
+            <enum name="pressed" value="1" />
+            <enum name="loading" value="2" />
+            <enum name="disabled" value="3" />
+        </attr>
+
+        <attr name="icon" />
+        <attr name="iconColor" format="reference" />
+        <attr name="labelPosition">
+            <enum name="left" value="0" />
+            <enum name="right" value="1" />
+            <enum name="noIcon" value="2" />
+            <enum name="noLabel" value="3" />
+        </attr>
+        <attr name="android:text" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="EditTextComponent">
+
+        <attr name="EdtState">
+            <enum name="defaultEnabled" value="0" />
+            <enum name="success" value="1" />
+            <enum name="error" value="2" />
+            <enum name="disabled" value="3" />
+        </attr>
+
+        <attr name="icon" />
+
+        <attr name="EdtStatusIcon">
+            <enum name="left" value="0" />
+            <enum name="right" value="1" />
+            <enum name="icon_status" value="2" />
+            <enum name="no_icon_status" value="3" />
+            <enum name="no_icon_right" value="4" />
+        </attr>
+
+        <attr name="EdtSize" format="enum">
+            <enum name="defaultSize" value="0" />
+        </attr>
+
+        <attr name="android:text" format="string" />
+
+        <attr name="rightIcon" format="enum">
+            <enum name="visible" value="0" />
+            <enum name="gone" value="1" />
+        </attr>
+
+        <attr name="EdtInputType" format="enum">
+            <enum name="plainText" value="0"/>
+            <enum name="password" value="1"/>
+            <enum name="email" value="2"/>
+        </attr>
+
+        <attr name="android:hint" format="string"/>
+    </declare-styleable>
+
+</resources>

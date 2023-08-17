@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/edit_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="@dimen/edit_text_component_size_padding_vertical"
+        android:paddingBottom="@dimen/edit_text_component_size_padding_vertical"
+        android:paddingStart="@dimen/edit_text_component_size_padding_horizontal"
+        android:paddingEnd="@dimen/edit_text_component_size_padding_horizontal"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/button_component_radius"
+        app:cardElevation="0dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/icon_left"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/ic_empty_filter"
+                app:layout_constraintBottom_toBottomOf="@+id/edt_text"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/edt_text" />
+
+            <EditText
+                android:id="@+id/edt_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="12dp"
+                android:background="@color/white"
+                android:ellipsize="end"
+                android:hint="@string/edt_hint_text"
+                android:maxLines="1"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/iv_status_icon"
+                app:layout_constraintStart_toEndOf="@+id/icon_left"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/iv_status_icon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="20dp"
+                android:src="@drawable/ic_error"
+                app:layout_constraintBottom_toBottomOf="@+id/edt_text"
+                app:layout_constraintEnd_toStartOf="@+id/icon_rigth"
+                app:layout_constraintTop_toTopOf="@+id/edt_text"
+                />
+
+            <ImageView
+                android:id="@+id/icon_rigth"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/ic_right_arrow"
+                app:layout_constraintBottom_toBottomOf="@+id/iv_status_icon"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/iv_status_icon" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+</merge>
